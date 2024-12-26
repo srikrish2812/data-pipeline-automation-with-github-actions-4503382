@@ -1,5 +1,6 @@
 name: Data Refresh - Python
-
+#
+# This workflow is triggered on a schedule.
 on:
   schedule:
     - cron: "0 */12 * * *"
