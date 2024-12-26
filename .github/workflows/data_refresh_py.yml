@@ -1,9 +1,12 @@
 name: Data Refresh - Python
 #
 # This workflow is triggered on a schedule.
-on:
-  schedule:
-    - cron: "0 */12 * * *"
+# on:
+#   schedule:
+#     - cron: "0 */12 * * *"
+
+on: [push]
+
 jobs:
   refresh-the-dashboard:
     runs-on: ubuntu-22.04
